@@ -10,7 +10,7 @@ int main() {
 	scanf("%d",&n);
 	printf("Entered number of elements: %d\n", n);
 
-	ptr = (int*)malloc(n * sizeof(int));
+	ptr = (int*)mloc(n * sizeof(int));
 
 	if (ptr == NULL) {
 		printf("Memory not allocated.\n");
